@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00021b;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.contato {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.hero .azul {
+  color: #004aad;
+}
+
+.hero p {
+  margin-top: 100px;
+  color: #ccc;
+}
+
+/*Formatação com backup*/
+.servico img  {
+  width: 500px;
+  border-radius: 1500px;
+}
+
+.servico h2 {
+  color: #004aad;
+  margin-bottom: 60px;
+  text-align: left;
+  font-size: 2.0rem;
+}
+
+.servico p {
+  margin: 110;
+  flex: 500;
+  color: #ccc;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.servico {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00021b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  gap: 20px;
+}
+
+/*Limpeza Fisica do Pc*/
+.limpezafisica img {
+  width: 500px;
+  border-radius: 1500px;
+}
+
+.limpezafisica h2 {
+  color: #004aad;
+  margin-bottom: 60px;
+  text-align: left;
+  font-size: 2.0rem;
+}
+
+.limpezafisica p {
+  margin: 0;
+  flex: 1;
+  color: #ccc;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.limpezafisica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.limpezafisica {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00021b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  gap: 20px;
+}
+
+/*Upgrade para SSD*/
+.upgrade img {
+  width: 500px;
+  border-radius: 1500px;
+}
+
+.upgrade h2 {
+  color: #004aad;
+  margin-bottom: 60px;
+  text-align: left;
+  font-size: 2.0rem;
+}
+
+.upgrade p {
+  margin: 0;
+  flex: 1;
+  color: #ccc;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00021b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  gap: 20px;
+}
+
+
+/*Final do site */
+.rodape {
+  background-color: #000111;
+  color:  #004aad;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.rodape-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.rodape-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rodape-coluna {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.rodape-coluna h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.rodape-coluna a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.rodape-coluna a:hover {
+  color: #fff;
+}
+
+.rodape-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rodape-social a {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.botao-contato {
+  margin-top: 10px;
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.rodape-direitos {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+/* 📱 Responsivo para celulares */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .servico, .limpezafisica, .upgrade {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servico h2, .limpezafisica h2, .upgrade h2 {
+    text-align: center;
+  }
+
+  .servico p, .limpezafisica p, .upgrade p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .rodape-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-coluna {
+    margin: 20px 0;
+  }
+
+  .rodape-social {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .botao-contato {
+    margin-top: 20px;
+  }
+} 
