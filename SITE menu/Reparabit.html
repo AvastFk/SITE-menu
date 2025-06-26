@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reparabit - Serviços</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo recortado.png" alt="Logo Reparabit" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+      <strong>Reparabit</strong>
+    </div>
+    <a href="#contato" class="contato">Fale conosco</a>
+  </header>
+
+  <section class="hero">
+    <h1>
+      A <span class="azul">Reparabit</span> é especializada<br>
+      em cuidar do seu computador,<br>
+      garantindo <span class="azul">soluções eficientes</span><br>
+      para todos os seus problemas.
+    </h1>
+    <p>
+      A Reparabit foi criada para manter seu computador sempre no melhor desempenho.<br>
+      Nosso missão é oferecer suporte confiável, manutenção de qualidade e soluções práticas para o seu dia a dia digital.
+    </p>
+  </section>
+
+  <section class="servicos">
+    <div class="servico">
+      <img src="formatacao.png" alt="Formatação">
+      <div>
+        <h2>Formatação com backup</h2>
+        <p>Antes de formatar o computador, fazemos o backup dos seus arquivos importantes para garantir que nada seja perdido.</p>
+      </div>
+    </div>
+
+    <div class="limpezafisica">
+      <img src="limpeza.png" alt="Limpeza Física">
+      <div>
+        <h2>Limpeza física</h2>
+        <p>Abrimos o computador com cuidado, removemos toda a poeira interna e trocamos a pasta térmica do processador.</p>
+      </div>
+    </div>
+
+    <div class="upgrade">
+      <img src="ssd.png" alt="Upgrade para SSD">
+      <div>
+        <h2>Upgrade para SSD</h2>
+        <p>Substituímos seu HD antigo por um SSD muito mais rápido, sem perder seus arquivos ou programas.</p>
+      </div>
+    </div>
+
+    <div class="servico">
+      <img src="virus.png" alt="Remoção de Vírus">
+      <div>
+        <h2>Remoção de Vírus</h2>
+        <p>Fazemos uma varredura completa para detectar e remover vírus, malwares e ameaças do sistema.</p>
+      </div>
+    </div>
+
+    <div class="servico">
+      <img src="programas.png" alt="Instalação de Programas">
+      <div>
+        <h2>Instalação de programas</h2>
+        <p>Instalamos os programas que você precisa no dia a dia e deixamos tudo atualizado e funcionando.</p>
+      </div>
+    </div>
+
+    <div class="servico">
+      <img src="otimizacao.png" alt="Otimização de desempenho">
+      <div>
+        <h2>Otimização de desempenho</h2>
+        <p>Analisamos o sistema, ajustamos configurações e removemos o que está pesando para deixar tudo mais rápido.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+  <div class="rodape-container">
+    <div class="rodape-logo"></div>
+
+    <div class="rodape-coluna">
+      <h4>Início</h4>
+      <a href="#">Home</a>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Sobre-nós</h4>
+      <a href="#">Informações da Empresa</a>
+      <a href="#">Contato</a>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Suporte</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Telefones</a>
+    </div>
+
+    <div class="rodape-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="botao-contato">Contato</a>
+    </div>
+  </div>
+
+  <div class="rodape-direitos">
+    © 2025 Copyright - Reparabit
+  </div>
+  </footer>
+  <script>
+  document.querySelector('.rodape-social a[href="#"]:nth-child(1)').href = "https://twitter.com/";
+  document.querySelector('.rodape-social a[href="#"]:nth-child(2)').href = "https://facebook.com/";
+  document.querySelector('.rodape-social a[href="#"]:nth-child(3)').href = "https://instagram.com/";
+
+  const whatsappLink = "https://wa.me/21994581019"; // Substitua SEUNUMERO pelo número do WhatsApp com DDI e DDD, ex: 5511999999999
+
+  document.querySelector('.contato').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open(whatsappLink, '_blank');
+  });
+
+  document.querySelector('.rodape-social .botao-contato').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open(whatsappLink, '_blank');
+  });
+</script>
+</body>
+</html>
